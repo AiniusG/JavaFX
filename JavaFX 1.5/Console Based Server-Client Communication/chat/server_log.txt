@@ -1,0 +1,24 @@
+New client request received: Socket[addr=/127.0.0.1,port=53495,localport=1234]
+Creating a new handler for client: A in room: 1
+Client A joined room 1
+Adding this client to room: 1
+New client request received: Socket[addr=/127.0.0.1,port=53499,localport=1234]
+Creating a new handler for client: B in room: 1
+Client B joined room 1
+Adding this client to room: 1
+New client request received: Socket[addr=/127.0.0.1,port=53503,localport=1234]
+Creating a new handler for client: C in room: 2
+Client C joined room 2
+Adding this client to room: 2
+New client request received: Socket[addr=/127.0.0.1,port=53507,localport=1234]
+Creating a new handler for client: D in room: 1
+Client D joined room 1
+Adding this client to room: 1
+New client request received: Socket[addr=/127.0.0.1,port=53512,localport=1234]
+Creating a new handler for client: E in room: 2
+Client E joined room 2
+Adding this client to room: 2
+Message in room 1 from A: Labas
+Message in room 1 from A: Labas #B
+Message in room 2 from C: Labas
+Message in room 2 from C: Labas #E

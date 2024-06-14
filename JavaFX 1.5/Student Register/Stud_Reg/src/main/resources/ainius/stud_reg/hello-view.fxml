@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ainius.stud_reg.Controller">
+   <children>
+      <TableView fx:id="tableFXML" layoutX="-1.0" layoutY="-4.0" onMouseClicked="#attendanceCheck" prefHeight="604.0" prefWidth="350.0">
+        <columns>
+          <TableColumn fx:id="nameTable" prefWidth="150.0" text="Vardas" />
+          <TableColumn fx:id="surnameTable" minWidth="0.0" prefWidth="150.0" text="Pavarde" />
+            <TableColumn fx:id="attendanceTable" prefWidth="50.0" text="Buvo" />
+        </columns>
+      </TableView>
+      <ChoiceBox fx:id="selectGroup" layoutX="361.0" layoutY="131.0" prefWidth="150.0" />
+      <Button fx:id="newGroup" layoutX="380.0" layoutY="99.0" mnemonicParsing="false" onAction="#NewGroup" prefHeight="25.0" prefWidth="111.0" text="Group" />
+      <TextField fx:id="nameField" layoutX="353.0" layoutY="259.0" prefHeight="25.0" prefWidth="150.0" promptText="Vardas" />
+      <TextField fx:id="surnameField" layoutX="353.0" layoutY="286.0" prefHeight="25.0" prefWidth="150.0" promptText="Pavarde" />
+      <Button fx:id="inputStudent" layoutX="372.0" layoutY="323.0" mnemonicParsing="false" onAction="#newStudent" prefHeight="25.0" prefWidth="111.0" text="Add" />
+      <Button layoutX="372.0" layoutY="359.0" mnemonicParsing="false" onAction="#removeStudent" prefHeight="25.0" prefWidth="111.0" text="Remove" />
+      <TextField fx:id="groupField" layoutX="361.0" layoutY="61.0" prefHeight="25.0" prefWidth="150.0" promptText="Group" />
+      <Button layoutX="372.0" layoutY="557.0" mnemonicParsing="false" onAction="#load" prefHeight="25.0" prefWidth="111.0" text="Load" />
+      <Button layoutX="372.0" layoutY="528.0" mnemonicParsing="false" onAction="#save" prefHeight="25.0" prefWidth="111.0" text="Save" />
+      <ChoiceBox fx:id="selectDate" layoutX="531.0" layoutY="131.0" prefHeight="0.0" prefWidth="150.0" />
+      <Button layoutX="550.0" layoutY="557.0" mnemonicParsing="false" onAction="#createPDF" prefHeight="25.0" prefWidth="111.0" text="PDF" />
+      <Text layoutX="593.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
+      <Button layoutX="549.0" layoutY="507.0" mnemonicParsing="false" onAction="#export" prefHeight="25.0" prefWidth="111.0" text="Export CSV" />
+      <TextField fx:id="excelField" layoutX="530.0" layoutY="431.0" prefHeight="25.0" prefWidth="150.0" promptText="CSV name" />
+      <Button layoutX="550.0" layoutY="476.0" mnemonicParsing="false" onAction="#importer" prefHeight="25.0" prefWidth="111.0" text="Import CSV" />
+   </children>
+</AnchorPane>
